@@ -1,0 +1,225 @@
+{
+  "app_name": "Sistem Informasi Wajib Pajak Daerah",
+  "app_short_name": "SIWAPAD",
+  "pemda_name": "PEMDA SIDRAP",
+  "pemda_full_name": "Pemerintah Kabupaten Sidenreng Rappang",
+  "version": "2.0.0",
+  "default_year": 2024,
+  "settings": {
+    "items_per_page": 10,
+    "auto_save": true,
+    "enable_firebase": true,
+    "enable_maps": true
+  },
+  "coordinates": {
+    "sidrap": {
+      "lat": -3.7333,
+      "lng": 119.8833,
+      "zoom": 10
+    },
+    "south_sulawesi": {
+      "lat": -3.5,
+      "lng": 119.5,
+      "zoom": 7
+    }
+  },
+  "tax_types": {
+    "reklame": {
+      "code": "01",
+      "name": "Pajak Reklame",
+      "law_reference": "UU No. 1 Tahun 2022 Pasal 47-56",
+      "fields": [
+        "jenis_reklame",
+        "panjang",
+        "lebar",
+        "jumlah_unit",
+        "jumlah_sisi",
+        "masa_tayang",
+        "nama_brand",
+        "no_izin",
+        "lokasi"
+      ]
+    },
+    "air_tanah": {
+      "code": "02",
+      "name": "Pajak Air Tanah",
+      "law_reference": "UU No. 1 Tahun 2022 Pasal 57-66",
+      "fields": [
+        "no_izin_ipat",
+        "jenis_penggunaan",
+        "jumlah_sumur_bor",
+        "jumlah_sumur_resapan",
+        "kedalaman_sumur",
+        "volume_per_hari",
+        "volume_per_bulan",
+        "lokasi"
+      ]
+    },
+    "sarang_burung": {
+      "code": "03",
+      "name": "Pajak Sarang Burung Walet",
+      "law_reference": "UU No. 1 Tahun 2022 Pasal 67-72",
+      "fields": [
+        "no_izin",
+        "jenis_bangunan",
+        "jumlah_lantai",
+        "luas_bangunan",
+        "lokasi"
+      ]
+    },
+    "mineral": {
+      "code": "04",
+      "name": "Pajak Mineral Bukan Logam & Batuan",
+      "law_reference": "UU No. 1 Tahun 2022 Pasal 73-82",
+      "fields": [
+        "no_izin",
+        "jenis_mineral",
+        "volume_produksi",
+        "satuan",
+        "lokasi_tambang"
+      ]
+    },
+    "pbb": {
+      "code": "05",
+      "name": "PBB-P2",
+      "law_reference": "UU No. 1 Tahun 2022 Pasal 95-104",
+      "fields": [
+        "nop",
+        "luas_tanah",
+        "luas_bangunan",
+        "njop_tanah",
+        "njop_bangunan",
+        "peruntukan",
+        "lokasi"
+      ]
+    },
+    "bphtb": {
+      "code": "06",
+      "name": "BPHTB",
+      "law_reference": "UU No. 1 Tahun 2022 Pasal 105-114",
+      "fields": [
+        "nop_baru",
+        "jenis_perolehan",
+        "npop",
+        "npokp",
+        "harga_perolehan",
+        "lokasi"
+      ]
+    },
+    "pbjt_mamin": {
+      "code": "07",
+      "name": "PBJT - Makanan & Minuman",
+      "law_reference": "UU No. 1 Tahun 2022 Pasal 15-24",
+      "fields": [
+        "jenis_usaha",
+        "jumlah_tempat_duduk",
+        "omzi_per_bulan",
+        "lokasi"
+      ]
+    },
+    "pbjt_listrik": {
+      "code": "08",
+      "name": "PBJT - Tenaga Listrik",
+      "law_reference": "UU No. 1 Tahun 2022 Pasal 25-30",
+      "fields": [
+        "jenis_pelanggan",
+        "daya_kva",
+        "pemakaian_per_bulan",
+        "lokasi"
+      ]
+    },
+    "pbjt_hotel": {
+      "code": "09",
+      "name": "PBJT - Perhotelan",
+      "law_reference": "UU No. 1 Tahun 2022 Pasal 31-40",
+      "fields": [
+        "kelas_hotel",
+        "jumlah_kamar",
+        "tarif_kamar",
+        "fasilitas",
+        "lokasi"
+      ]
+    },
+    "pbjt_parkir": {
+      "code": "10",
+      "name": "PBJT - Parkir",
+      "law_reference": "UU No. 1 Tahun 2022 Pasal 41-46",
+      "fields": [
+        "jenis_lokasi",
+        "kapasitas_kendaraan",
+        "tarif_per_jam",
+        "jam_operasional",
+        "lokasi"
+      ]
+    },
+    "pbjt_hiburan": {
+      "code": "11",
+      "name": "PBJT - Kesenian & Hiburan",
+      "law_reference": "UU No. 1 Tahun 2022 Pasal 7-14",
+      "fields": [
+        "jenis_hiburan",
+        "kapasitas_pengunjung",
+        "tiket_masuk",
+        "jam_operasional",
+        "lokasi"
+      ]
+    },
+    "opsen_pkb": {
+      "code": "12",
+      "name": "Opsen PKB",
+      "law_reference": "UU No. 28 Tahun 2009 Pasal 13-15",
+      "fields": [
+        "no_bpkb",
+        "jenis_kendaraan",
+        "merk_tipe",
+        "tahun_kendaraan",
+        "nilai_pkb",
+        "lokasi"
+      ]
+    },
+    "opsen_bbnkb": {
+      "code": "13",
+      "name": "Opsen BBNKB",
+      "law_reference": "UU No. 28 Tahun 2009 Pasal 16-18",
+      "fields": [
+        "no_faktur",
+        "jenis_kendaraan",
+        "merk_tipe",
+        "tahun_kendaraan",
+        "nilai_jual_kendaraan",
+        "lokasi"
+      ]
+    }
+  },
+  "user_roles": {
+    "admin": {
+      "name": "Administrator",
+      "permissions": ["all"],
+      "description": "Akses penuh ke semua fitur"
+    },
+    "operator": {
+      "name": "Operator",
+      "permissions": ["input_wp", "view_wp", "edit_wp", "delete_wp", "input_realisasi", "view_realisasi"],
+      "description": "Input dan kelola data wajib pajak"
+    },
+    "verifikator": {
+      "name": "Verifikator",
+      "permissions": ["view_wp", "view_realisasi", "verify_data", "input_realisasi"],
+      "description": "Verifikasi data dan input realisasi"
+    },
+    "viewer": {
+      "name": "Viewer",
+      "permissions": ["view_wp", "view_realisasi", "view_dashboard"],
+      "description": "Hanya melihat data"
+    }
+  },
+  "firebase": {
+    "api_key": "",
+    "auth_domain": "",
+    "project_id": "",
+    "storage_bucket": "",
+    "messaging_sender_id": "",
+    "app_id": "",
+    "measurement_id": ""
+  }
+}
